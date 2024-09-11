@@ -1,0 +1,14 @@
+<div id="main">
+  <input type="text" placeholder="enter url" (change)="changeURL($event)">
+  <button (click)="changeSRC()">enter</button>
+  <div>
+<img [src]="src" alt="">
+  </div>
+</div>
+
+<div>
+  <p>this is two way data binding</p>
+  <input type="text" placeholder="enter image url" [(ngModel)]="myurl">
+  <button>click me</button>
+</div>
+<img [src]="myurl" alt="">
